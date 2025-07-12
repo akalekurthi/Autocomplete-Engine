@@ -1,10 +1,10 @@
-# 🚀 Autocomplete Engine with Trie Data Structure
+#  Autocomplete Engine with Trie Data Structure
 
 A high-performance autocomplete engine built with Spring Boot and Trie (Prefix Tree) data structure, featuring word frequency prioritization, fuzzy search capabilities, and a modern web interface.
 
-## ✨ Features
+##  Features
 
-### 🔥 Core Features
+###  Core Features
 - **Lightning-Fast Autocomplete**: Trie-based prefix matching for instant suggestions
 - **Word Frequency Prioritization**: Most common words appear first in suggestions
 - **Fuzzy Search**: Typo-tolerant search using Levenshtein distance algorithm
@@ -12,14 +12,14 @@ A high-performance autocomplete engine built with Spring Boot and Trie (Prefix T
 - **RESTful API**: Clean, well-documented endpoints for integration
 - **Modern Web UI**: Beautiful, responsive interface for testing all features
 
-### 🛠️ Technical Features
+###  Technical Features
 - **Efficient Data Structure**: Trie (Prefix Tree) for O(k) prefix search complexity
 - **Real-time Suggestions**: Instant feedback as user types
 - **CORS Enabled**: Cross-origin requests supported for web applications
 - **Error Handling**: Robust error handling and validation
 - **Scalable Architecture**: Easy to extend and maintain
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Component | Technology | Version | Purpose |
 |-----------|------------|---------|---------|
@@ -30,7 +30,7 @@ A high-performance autocomplete engine built with Spring Boot and Trie (Prefix T
 | **Frontend** | HTML/CSS/JS | - | Web interface |
 | **Server** | Tomcat (Embedded) | 10.1.20 | Web server |
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - **Java JDK**: 17 or higher
@@ -64,7 +64,7 @@ Started AutocompleteApplication in 2.758 seconds
 - Double-click `autocomplete.html`
 - Or open in browser: `file:///path/to/autocomplete.html`
 
-## 📡 API Documentation
+##  API Documentation
 
 ### Base URL
 ```
@@ -129,7 +129,7 @@ Word added: awesome (frequency: 50)
 curl -X POST "http://localhost:8080/api/autocomplete/add?word=awesome&frequency=50"
 ```
 
-## 🎯 Usage Examples
+##  Usage Examples
 
 ### Using the Web UI
 
@@ -171,7 +171,7 @@ curl -X POST "http://localhost:8080/api/autocomplete/add?word=amazing&frequency=
 curl "http://localhost:8080/api/autocomplete/fuzzy?prefix=wlecome&maxDistance=2"
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 autocomplete-engine/
@@ -197,7 +197,7 @@ autocomplete-engine/
 └── README.md                                 # This documentation
 ```
 
-## 🔧 Customization
+##  Customization
 
 ### Adding More Words
 Edit `src/main/resources/words.txt`:
@@ -228,7 +228,7 @@ The modular architecture makes it easy to add:
 - Database persistence
 - Authentication and authorization
 
-## 🧪 Testing
+##  Testing
 
 ### Unit Tests
 ```bash
@@ -267,7 +267,7 @@ Import these requests to Postman:
 }
 ```
 
-## 🚀 Deployment
+##  Deployment
 
 ### Local Development
 ```bash
@@ -288,7 +288,7 @@ EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/app.jar"]
 ```
 
-## 📊 Performance Characteristics
+##  Performance Characteristics
 
 ### Time Complexity
 - **Prefix Search**: O(k) where k is the length of the prefix
@@ -302,7 +302,7 @@ ENTRYPOINT ["java", "-jar", "/app.jar"]
 - **Base Dictionary**: ~50KB for 1000 words
 - **Runtime**: ~10-20MB for Spring Boot application
 
-## 🔍 Algorithm Details
+##  Algorithm Details
 
 ### Trie Data Structure
 - **Node Structure**: Each node contains a map of characters to child nodes
@@ -319,7 +319,7 @@ ENTRYPOINT ["java", "-jar", "/app.jar"]
 - **Real-time Updates**: Re-sorts when new words are added
 - **Stable Sorting**: Maintains alphabetical order for same frequencies
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
@@ -329,30 +329,11 @@ ENTRYPOINT ["java", "-jar", "/app.jar"]
 6. Push to the branch: `git push origin feature/amazing-feature`
 7. Submit a pull request
 
-## 📝 License
+##  License
 
 This project is open source and available under the MIT License.
 
-## 🙏 Acknowledgments
 
-- Spring Boot team for the excellent framework
-- The Trie data structure community
-- All contributors and testers
 
----
 
-## 🎯 Interview Preparation
 
-This project demonstrates:
-- **Data Structures**: Trie implementation and optimization
-- **Algorithms**: Levenshtein distance, sorting, search algorithms
-- **System Design**: RESTful API design, scalability considerations
-- **Full-Stack Development**: Backend (Java/Spring) + Frontend (HTML/JS)
-- **Problem Solving**: Efficient autocomplete with typo tolerance
-- **Code Quality**: Clean architecture, proper separation of concerns
-
-**Perfect for demonstrating your skills in data structures, algorithms, and full-stack development!**
-
----
-
-**Happy Coding! 🎉** 
